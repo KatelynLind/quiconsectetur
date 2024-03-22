@@ -1,0 +1,47 @@
+{
+  "packageManager": "pnpm@8.10.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.5",
+    "@babel/plugin-transform-export-namespace-from": "^7.23.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@effect/build-utils": "^0.5.0",
+    "@effect/docgen": "^0.3.6",
+    "@effect/language-service": "^0.0.21",
+    "@types/node": "^20.10.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vitest/coverage-v8": "^0.34.6",
+    "babel-plugin-annotate-pure-calls": "^0.4.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-codegen": "^0.21.0",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "glob": "^10.3.10",
+    "madge": "^6.1.0",
+    "prettier": "^3.1.0",
+    "tsx": "^4.6.1",
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6"
+  },
+  "name": "quiconsectetur",
+  "author": "RosemarieHowell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KatelynLind/quiconsectetur.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KatelynLind/quiconsectetur.git/issues"
+  },
+  "version": "1.0.0"
+}

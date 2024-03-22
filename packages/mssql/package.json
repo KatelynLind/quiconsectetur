@@ -1,0 +1,40 @@
+{
+  "name": "@sqlfx/mssql",
+  "version": "0.31.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tim-smart/sqlfx.git"
+  },
+  "author": "Yuval Datner <contact@datner.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tim-smart/sqlfx/issues"
+  },
+  "homepage": "https://github.com/tim-smart/sqlfx",
+  "scripts": {
+    "build": "pnpm build-esm && pnpm build-cjs && pnpm build-annotate && build-utils pack-v2",
+    "build-esm": "tsc -b tsconfig.build.json",
+    "build-cjs": "babel build/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir build/cjs --source-maps",
+    "build-annotate": "babel build --plugins annotate-pure-calls --out-dir build --source-maps"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "dependencies": {
+    "@sqlfx/sql": "workspace:^",
+    "tedious": "^16.6.1"
+  },
+  "devDependencies": {
+    "@effect/schema": "^0.51.0",
+    "@types/tedious": "^4.0.14",
+    "effect": "2.0.0-next.57"
+  },
+  "peerDependencies": {
+    "effect": "2.0.0-next.57"
+  }
+}
